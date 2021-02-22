@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Animation </title>
+<meta name="viewport"
+content="width=980">
+</head>
+<style>
+body {
+  background: url(galaxy.jpg);
+}
+
+.sun {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 70%;
+    background: url(Map.jpg);
+    box-shadow: 0 0 15px;
+    animation: round 5s linear;
+    animation-iteration-count:5 ;
+}
+
+@keyframes round {
+   100% { transform: rotate(360deg);}
+}
+
+
+.earth {
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 50%;
+    background: url(yellow.jpg);
+    box-shadow: 0 0 10px;
+}
+
+</style>
+<body>
+<font face="Britannic Bold" color="red" size="10%"><b> <u> Animation Of a Planet revolving around the Sun </u> </b> </font>
+<br>
+<a href="solar System.html"> <img src="Back.png" width=60> </a>
+
+<div class="sun">
+   <div class="earth"></div>
+</div>
+
+</body>
+</html>

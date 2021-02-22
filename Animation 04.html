@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Animation </title>
+<style>
+body{
+  background: url(sky.jpg);
+}
+
+.comets{
+  position:relative;
+  height:100%;
+  width: 1000px;
+  top: -200px;
+  min-height:900px;
+  overflow: hidden;
+}
+
+.comets >div{
+  display: inline-block;
+  box-shadow: inset 0px 0px 1px #294b67;
+  height:60px;
+  width: 5px;
+  border-radius: 5% 30% 70%;
+  border: 1px solid #333;
+  background-color: white;
+  animation: falling 14s linear 0s infinite;
+  animation-timing-function: 2s ease-in-out;
+  animation-iteration-count: 2;
+}
+
+.comets >div:nth-of-type(1) {
+  height: 60px; 
+  width: 1px;
+  background-color: white;
+  left: 10vw;
+}
+
+.comets >div:nth-of-type(2) {
+  height: 70px; 
+  width: 2px;
+  background-color: white;
+  left: 100vw;
+  animation: calling 10s linear 4s alternate;
+}
+
+.comets >div:nth-of-type(3) {
+  height: 50px; 
+  width: 5px;
+  background-color: white;
+  left: 0px;
+ animation: calling2 15s linear 8s infinite;
+ animation-iteration-count: 2;
+}
+
+
+@keyframes falling {
+
+  0% {
+    transform: translate3d(100px,0px,0px) rotate(160deg);
+  }
+
+  3% {
+    transform:
+    translate3d(450px,900px,0) rotate(160deg);
+  }
+  100% {
+    transform:
+    translate3d(450px,900px,0) rotate(160deg);
+  }
+}
+
+@keyframes calling2 {
+
+  0% {
+    transform: translate3d(100px,0px,0px) rotate(160deg);
+  }
+
+  3% {
+    transform:
+    translate3d(450px,900px,0) rotate(160deg);
+  }
+  100% {
+    transform:
+    translate3d(450px,900px,0) rotate(160deg);
+  }
+}
+
+@keyframes calling {
+
+  0% {
+    transform: translate3d(50px,0px,0px) rotate(160deg);
+  }
+
+  3% {
+    transform:
+    translate3d(450px,900px,0) rotate(160deg);
+  }
+  100% {
+    transform:
+    translate3d(450px,900px,0) rotate(16deg);
+  }
+}
+
+</style>
+<meta name="viewport"
+content="width=980">
+</head>
+<body>
+<font face="Britannic Bold" color="yellow" size="15%"><b> <u> Animation Of Meteror Shower </u> </b> </font>
+<br>
+
+
+<div class="comets">
+  <div></div>
+  <div></div> 
+  <div></div>
+</div>
+</body>
+</html>

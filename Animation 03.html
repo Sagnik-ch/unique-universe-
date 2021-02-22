@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Animation </title>
+<style> 
+body {
+  background: url(galaxy.jpg);
+  animation: like 40s linear alternate;
+}
+
+@keyframes like {
+  0% {background-position: 0  0}
+  100% {background-position: 0  100%}
+}
+
+
+.Earth {
+  background: url(Moon1.jpg);
+  background-size: cover;
+  border-radius:50%;
+  height: 280px;
+  width: 280px;
+  top: 300px;
+  left: 300px;
+  box-shadow: 0 0 15px;
+  animation: earth 50s;
+  transform: rotateX(6deg) rotateY(6deg) rotateZ(6deg);
+}
+
+@keyframes earth {
+  0% {background-position: 0  0}
+  100% {background-position: 360px  0}
+}
+
+div {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: 4; 
+  box-shadow: 0 0 25px RGBA(255,255);
+}
+
+@keyframes example {
+  0%   {background-color:black; left:700px; top:200px;}
+   30%   {background-color:black; left:300px; top:5px;}
+  100% {background-color:black; left:-700px; top:-500px;}
+}
+
+
+</style>
+<meta name="viewport"
+content="width=980">
+</head>
+<body>
+<font face="Britannic Bold" color="yellow" size="15%"><b> <u> Animation Of Lunar Eclipse </u> </b> </font>
+<br>
+<a href="lunar eclipse.html"> <img src="back.png" width=5%> </a>
+
+
+<div class="Earth"></div>
+<div></div>
+</body>
+</html>
